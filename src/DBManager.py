@@ -1,13 +1,14 @@
 import psycopg2
 from src.config import config
 
-PARAMS = config("config.ini", "postgresql")
+PARAMS = config()
 conn = psycopg2.connect(**PARAMS)
 conn.autocommit = True
 cur = conn.cursor()
 
 class DBManager:
     def _init_(self):
+        self.conn = conn
         self.cursor = cur
 
     def get_companies_and_vacancies_count(self):
