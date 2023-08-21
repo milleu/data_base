@@ -53,7 +53,8 @@ def get_vacancy():
                    "job_name": job_name,
                    "job_description": description,
                    "salary": salary_min,
-                   "url": url}
+                   "url": url,
+                   "employee_id": employee_id}
             employee_data = {"employee_id": employee_id,
                              "emp_name": emp_name}
             vacancy_list.append(job)

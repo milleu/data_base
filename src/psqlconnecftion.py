@@ -18,9 +18,9 @@ for row in employee_data:
                 (row['employee_id'], row['emp_name']))
 
 for row in vacancy_data:
-    cur.execute('INSERT INTO vacancy_list VALUES (%s, %s, %s, %s, %s)',
+    cur.execute('INSERT INTO vacancy_list VALUES (%s, %s, %s, %s, %s, %s)',
                 (row['vacancy_id'], row['job_name'], row['job_description'],
-                 row['salary'], row['url']))
+                 row['salary'], row['url'], row['employee_id']))
 
 conn.commit()
 cur.close()
