@@ -35,5 +35,5 @@ class DBManager:
         pass
 
 
-hh = DBManager()
-print(hh)
+job_data = DBManager()
+print(job_data)
