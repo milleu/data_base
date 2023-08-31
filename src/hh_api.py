@@ -7,7 +7,7 @@ import requests
 url = "https://api.hh.ru/vacancies?employer_id="
 params = {
     "pages": 5,
-    "per_page": 20}
+    "per_page": 100}
 headers = {"User-Agent": "50355527"}
 
 company_list = {"gazprom": "39305", "yandex": "1740",
